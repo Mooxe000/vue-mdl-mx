@@ -1,0 +1,38 @@
+.image-preloader
+  
+.docs-layout(
+class='mdl-layout'
+class='mdl-js-layout'
+)
+
+  
+  //- Header
+  header.docs-layout-header(
+  class='mdl-layout__header'
+  )
+    comp-header
+    
+  main.docs-layout-content(
+  class='mdl-layout__content'
+  class='mdl-color-text--grey-600'
+  )
+    
+    #content.content(
+    class='mdl-grid.mdl-grid--no-spacing'
+    )
+      .subpageheader(
+      class='mdl-cell--12-col'  
+      )
+        component(
+        :is="compContent"
+        )
+          
+        
+      //-{{page.title}}
+      //- | {% block content %}
+      //- | {{content|safe}}
+      //- | {% endblock %}
+      
+  
+  //- Footer
+  comp-footer

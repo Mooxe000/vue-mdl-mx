@@ -1,0 +1,95 @@
+.mdl-layout__header-row
+  span.docs-layout-title(
+  class='mdl-layout-title'
+  )
+    a(
+    v-link='"/"'
+    )
+      | Material
+      br
+      | Design
+      br
+      | Lite
+      
+.docs-navigation__container
+  
+  nav.docs-navigation(
+  class='mdl-navigation'
+  )
+    
+    a.about(
+    class='mdl-navigation__link'
+    v-link='"about"'
+    ) About
+    
+    a.started(
+    class='mdl-navigation__link'
+    v-link='"started"'
+    ) Getting Started
+    
+    a.templates(
+    class='mdl-navigation__link'
+    v-link='"templates"'
+    ) Templates
+    
+    a.components(
+    class='mdl-navigation__link'
+    v-link='"components"'
+    ) Components
+    
+    a.styles(
+    class='mdl-navigation__link'
+    v-link='"styles"'
+    ) Styles
+    
+    a.customize(
+    class='mdl-navigation__link'
+    v-link='"customize"'
+    ) Customize
+    
+    a.showcase(
+    class='mdl-navigation__link'
+    v-link='"showcase"'
+    ) Showcase
+    
+    a.faq(
+    class='mdl-navigation__link'
+    v-link='"faq"'
+    ) FAQ
+    
+    .spacer
+      
+    a.github(
+    class='mdl-navigation__link'
+    class='mdl-navigation__link--icon'
+    href="https://github.com/google/material-design-lite"
+    )
+      i.material-icons link
+      span GitHub
+      
+    a.download(
+    class='mdl-navigation__link'
+    class='mdl-navigation__link--icon'
+    href="{{page.include_prefix}}started/index.html#download"
+    )
+      i.material-icons &#58052;
+      span Download
+      button(
+      class='mdl-button'
+      class='mdl-js-button'
+      class='mdl-js-ripple-effect'
+      class='mdl-button--fab'
+      class='mdl-button--mini-fab'
+      class='mdl-color--lime-A200'
+      )
+        i.material-icons &#58052;
+        
+i.material-icons(
+class='scrollindicator'
+class='scrollindicator--right'
+) &#58133;
+
+i.material-icons(
+class='scrollindicator'
+class='scrollindicator--left'
+) &#58132;

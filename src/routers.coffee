@@ -4,31 +4,35 @@ module.exports = (router) ->
 
     '/about':
       name: 'about'
-      component: require './module/About/main.vue'
+      component: require './view/About/main.vue'
 
     '/started':
       name: 'started'
-      component: require './module/Started/main.vue'
+      component: require './view/Started/main.vue'
 
     '/templates':
       name: 'templates'
-      component: require './module/Templates/main.vue'
+      component: require './view/Templates/main.vue'
 
     '/components':
       name: 'components'
-      component: require './module/Components/main.vue'
+      component: require './view/Components/main.vue'
 
     '/styles':
       name: 'styles'
-      component: require './module/Styles/main.vue'
+      component: require './view/Styles/main.vue'
 
     '/customize':
       name: 'customize'
-      component: require './module/Customize/main.vue'
+      component: require './view/Customize/main.vue'
 
     '/faq':
       name: 'faq'
-      component: require './module/FAQ/main.vue'
+      component: require './view/FAQ/main.vue'
+
+    'test':
+      name: 'test'
+      component: require './component/Layout/main.vue'
 
   router.alias
 
