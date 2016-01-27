@@ -1,0 +1,144 @@
+/*Styles page*/
+.styles a {
+  color: #00BCD4;
+}
+.styles .styles__content h2 {
+  text-transform: none;
+}
+.styles .typo-styles {
+  margin-bottom: 40px;
+}
+.styles .typo-styles dt {
+  display: block;
+  float: left;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.24);
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.styles .typo-styles dd {
+  display: block;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+.styles .typo-styles .typo-styles__demo {
+  margin-bottom: 8px;
+}
+.styles .typo-styles .typo-styles__desc {
+  font-weight: 300;
+}
+.styles .typo-styles .typo-styles__desc .typo-styles__name {
+  margin-right: 8px;
+  font-weight: 400;
+}
+.styles .download-btn {
+  color: rgba(0, 0, 0, 0.54);
+  line-height: 20px;
+  display: flex;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.styles .download-btn.download-btn--customizer .material-icons {
+  margin-top: -2px;
+}
+.styles .download-btn > * {
+  margin-right: 8px;
+}
+.styles .styles__ribbon {
+  background-color: #4A148C;
+  width: 100vw;
+  margin: 80px 0;
+  margin-left: -40px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.styles .styles__ribbon > .ribbon__imagecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.styles .styles__ribbon > .ribbon__imagecontainer > .ribbon__image {
+  display: block;
+  margin-bottom: 48px;
+  border: 0;
+}
+.styles .styles__ribbon > .ribbon__imagecontainer > .ribbon__caption {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+.styles .styles__ribbon > .ribbon__imagecontainer > .ribbon__caption.ribbon__caption--split {
+  width: 100%;
+  text-align: left;
+}
+.styles .styles__ribbon > .ribbon__imagecontainer > .ribbon__caption > .material-icons {
+  height: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+  margin-top: -1px;
+}
+.styles .styles__ribbon > .ribbon__imagecontainer > .ribbon__caption.ribbon__caption--split > .material-icons {
+  float: right;
+}
+.styles .content .docs-text-styling h3 {
+  text-transform: none;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.styles .content .docs-text-styling p {
+  margin-top: 0;
+}
+.styles img.customizer {
+  max-width: 450px;
+}
+.styles .code-with-text {
+  margin-right: 40px;
+}
+.styles .docs-layout.is-small-screen .code-with-text pre[class*=language-markup]{
+  width: 100vw;
+  max-width: none;
+}
+.styles .content ul,
+.components .content ul {
+  font-size: 13px;
+}
+.styles .content li:before {
+  font-size: 16px;
+}
+.styles .content .mdl-cell.left-col {
+  padding-right: 40px;
+}
+.styles .content .mdl-cell.right-col {
+  margin-bottom: 40px;
+}
+.styles .code-with-text {
+  margin-bottom: 20px;
+}
+.styles .content .styles__content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.styles .styles__download {
+  display: flex;
+}
+.styles .styles__download a {
+  font-weight: 500;
+  margin-right: 16px;
+}
+.styles .styles__content a .customizer {
+  border: 0;
+}

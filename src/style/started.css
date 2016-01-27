@@ -1,0 +1,93 @@
+/* Getting started guide */
+.started .mdl-tabs__tab-bar {
+  justify-content: flex-start;
+  border-bottom: 0;
+}
+.started .download-button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.started .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+  color: #00ACC1;
+}
+.started .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  background-color: #00ACC1;
+}
+.started .docs-layout-content {
+  text-align: center;
+}
+.started .chapter-toc {
+  display: table;
+}
+.started .code-with-text {
+  width: 640px;
+  box-sizing: border-box;
+}
+.started .docs-layout .content section {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.started .content h3,
+.started .content h4 {
+  display: table-cell;
+  font-size: 15px;
+  padding-right: 60px;
+  line-height: 25px;
+  text-transform: none;
+}
+.started .content h3 {
+  width: 140px;
+}
+.started .content section {
+  margin-bottom: 30px;
+}
+.started .section-content {
+  display: table-cell;
+}
+
+.started .content p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.started .mdl-tabs {
+  margin-bottom: 22px;
+}
+.started .content .mdl-tabs__panel {
+  padding-top: 10px;
+}
+.started .caption {
+  font-size: 13px;
+  max-width: 640px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+.started .caption h4 {
+  font-size: 13px;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 0;
+}
+.started .use-components pre {
+  margin-top: 0;
+}
+.started .component-example {
+  margin: 30px 0;
+}
+.started ol {
+  padding-left: 18px;
+  font-size: 13px;
+  max-width: 640px;
+  box-sizing: border-box;
+}
+.started pre {
+  width: 640px;
+  box-sizing: border-box;
+  position: relative;
+}
+.started .snippet-group {
+  max-width: 640px;
+  margin: 60px 0 40px 0;
+}

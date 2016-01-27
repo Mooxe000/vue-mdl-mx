@@ -1,0 +1,116 @@
+@media (max-height: 600px){
+  .about .docs-layout-header.mdl-layout__header {
+    background-size: auto 80px, cover;
+  }
+}
+
+@media (max-width: 850px) {
+  .snippet-group .snippet-demo {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 850px) {
+  .started .chapter-toc {
+    display: block;
+  }
+  .started .content h3,
+  .started .content h4 {
+    display: block;
+    width: auto;
+  }
+  .started .section-content {
+    display: block;
+  }
+  .started pre {
+    width: auto;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 15px 40px;
+    box-sizing: content-box;
+    display: block;
+    max-width: none;
+  }
+  .started .caption {
+    margin-left: -40px;
+    margin-right: -40px;
+    max-width: none;
+    box-sizing: content-box;
+    padding: 15px 40px;
+  }
+  .started .mdl-tabs__tab-bar {
+    margin-left: -40px;
+    margin-right: -40px;
+    justify-content: center;
+  }
+  .started .mdl-tabs__tab {
+    padding: 0 3%;
+  }
+  .started .content {
+    display: block;
+  }
+  .started .snippet-group {
+    margin-left: -40px;
+    margin-right: -40px;
+    max-width: none;
+  }
+  .started .snippet-group code {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .started .docs-layout .docs-text-styling pre[class*=language-markup] {
+    max-width: none;
+  }
+  .docs-layout .code-with-text {
+    width: 100%;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 15px 40px;
+    display: block;
+    box-sizing: content-box;
+  }
+  .docs-layout .code-with-text pre {
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), /* Webkit-based browsers */
+     (min--moz-device-pixel-ratio: 2),    /* Older Firefox browsers (prior to Firefox 16) */
+     (min-resolution: 2dppx),             /* The standard way */
+     (min-resolution: 192dpi)             /* dppx fallback */ {
+  .social-btn__twitter {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_white_24dp.png');
+  }
+  .social-btn__gplus {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_white_24dp.png');
+  }
+  .templates .docs-layout-header {
+    background-image: url('templates_2x.png');
+  }
+  .showcase .docs-layout-header {
+    background-image: url('templates_2x.png');
+  }
+  .components .docs-layout-header {
+    background-image: url('components_2x.png');
+  }
+  .styles .docs-layout-header {
+    background-image: url('styles_2x.png');
+  }
+  .customize .docs-layout-header {
+    background-image: url('customize_2x.png');
+  }
+  .about .docs-layout-header {
+    background: url('logo.svg'), url('header_2x.jpg');
+    background-size: auto 30%, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center center, center center;
+  }
+}

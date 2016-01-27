@@ -1,3 +1,5 @@
+require './style.styl'
+
 Vue = require 'vue'
 VueRouter = require 'vue-router'
 
@@ -14,3 +16,5 @@ router = new VueRouter
 routerMap router
 
 router.start app, '#app'
+
+# require './main.js'

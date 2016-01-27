@@ -15,6 +15,7 @@
     "dev": "webpack-dev-server --inline --hot --content-base dist --config webpack/dev.conf.coffee"
   },
   "dependencies": {
+    "material-design-lite": "^1.0.6",
     "vue": "^1.0.15",
     "vue-router": "^0.7.10"
   },
@@ -40,6 +41,7 @@
     "json-loader": "^0.5.4",
     "lodash": "^4.0.0",
     "run-sequence": "^1.1.5",
+    "script-loader": "^0.6.1",
     "style-loader": "^0.13.0",
     "stylus": "^0.53.0",
     "stylus-loader": "^1.5.0",

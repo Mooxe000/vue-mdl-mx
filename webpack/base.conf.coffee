@@ -20,30 +20,29 @@ module.exports =
   #     src:
   module:
     loaders: [
-      {
         test: /\.vue$/
         loader: 'vue'
-      }
-      {
+      ,
         test: /\.jade$/
         loader: 'jade-loader'
-      }
-      {
+      ,
         test: /\.coffee$/
         loader: 'coffee-loader'
         exclude: /node_modules/
-      }
-      # {
-      #   test: /\.js$/
-      #   loader: 'babel!eslint'
-      #   exclude: /node_modules/
-      # }
-      {
-        test: /\.(png|jpg|gif)$/
+      ,
+        test: /\.styl$/
+        loader: 'style!css!stylus'
+      ,
+        test: /\.css$/
+        loader: 'style!css'
+      ,
+        test: /\.js$/
+        loader: 'script-loader'
+        exclude: /node_modules/
+      ,
+        test: /\.(png|jpg|gif|svg)$/
         loader: 'url'
-        query: {
+        query:
           limit: 10000
           name: '[name].[ext]?[hash]'
-        }
-      }
     ]

@@ -7,10 +7,7 @@ class='mdl-js-layout'
 
   
   //- Header
-  header.docs-layout-header(
-  class='mdl-layout__header'
-  )
-    comp-header
+  comp-header
     
   main.docs-layout-content(
   class='mdl-layout__content'
@@ -23,15 +20,23 @@ class='mdl-js-layout'
       .subpageheader(
       class='mdl-cell--12-col'  
       )
-        component(
-        :is="compContent"
-        )
+      component(
+      :is="compContent"
+      )
           
         
       //-{{page.title}}
       //- | {% block content %}
       //- | {{content|safe}}
       //- | {% endblock %}
+      
+      section.docs-text-styling.download(
+      class='mdl-color--grey-800'
+      )
+        
+        a(
+        class='mdl-color-text--grey-50'
+        ) Download Kit
       
   
   //- Footer

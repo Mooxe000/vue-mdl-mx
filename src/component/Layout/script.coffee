@@ -11,10 +11,12 @@ Comp =
   Showcase: require '../../view/Showcase/main.vue'
   FAQ: require '../../view/FAQ/main.vue'
 
+  page: require '../page/main.vue'
+
 module.exports =
 
   data: ->
-    compContent: 'CompAbout'
+    compContent: 'CompPage'
 
   components:
     CompHeader: Comp.Header
@@ -28,3 +30,5 @@ module.exports =
     CompCustomize: Comp.Customize
     CompShowcase: Comp.Showcase
     CompFaq: Comp.FAQ
+
+    CompPage: Comp.page

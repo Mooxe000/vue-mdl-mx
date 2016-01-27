@@ -33,6 +33,7 @@ module.exports = (router) ->
     'test':
       name: 'test'
       component: require './component/Layout/main.vue'
+      # component: require './component/header/main.vue'
 
   router.alias
 
