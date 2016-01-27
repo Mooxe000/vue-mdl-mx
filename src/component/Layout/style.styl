@@ -9,6 +9,15 @@
 
 .docs-layout
 
+  ul
+    list-style-type none
+
+  li
+    position relative
+
+  .docs-text-styling a
+    text-decoration none
+
   main.docs-layout-content
 
     overflow visible
@@ -26,7 +35,7 @@
       font-size 16px
       font-weight 500
 
-    .docs-text-styling.download
+    section.docs-text-styling.download
       display -webkit-flex
       display -ms-flexbox
       display flex
@@ -39,6 +48,15 @@
       display flex
       justify-content center
       align-items center
+
+      font-weight 500
+      font-size 13px
+      text-transform uppercase
+      line-height 64px
+      padding 0 16px
+      color white
+      box-sizing border-box
+      border-bottom 3px solid transparent
 
       a
         font-weight 500
