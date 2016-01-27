@@ -61,26 +61,13 @@
           box-sizing border-box
           border-bottom 3px solid transparent
 
-        &:not(.download),
-        &.download > span,
-        &.download > .material-icons
-          opacity 0.65
-
-        &:hover,
-        &.download:hover > span,
-        &.download:hover > .material-icons
-          background-color inherit
-          opacity 1 !important
-
-        &:not(.mdl-navigation__link--icon):hover
-          border-bottom-color #18FFFF
-
       .mdl-navigation__link--icon.github,
       .mdl-navigation__link--icon.download
 
         text-transform none
 
-        & > span, & > .material-icons
+        & > span,
+        & > .material-icons
           line-height 64px
           margin-right 8px
           line-height inherit
@@ -91,6 +78,24 @@
           i.material-icons
             color black
             opacity 0.54
+
+      .mdl-navigation__link
+
+        &:not(.download),
+        &.download > span
+          opacity 0.65
+
+        &.download > button
+          opacity 0.87
+
+        &:hover,
+        &.download:hover > span,
+        &.download:hover > button
+          background-color inherit
+          opacity 1 !important
+
+        &:not(.mdl-navigation__link--icon):hover
+          border-bottom-color #18FFFF
 
       .spacer
         flex-grow 1
