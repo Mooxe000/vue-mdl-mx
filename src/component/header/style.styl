@@ -81,6 +81,7 @@
 
         &:not(.download),
         &.download > span
+        &.download > .material-icons
           opacity 0.65
 
         &.download > button
@@ -88,6 +89,7 @@
 
         &:hover,
         &.download:hover > span,
+        &.download:hover > .material-icons
         &.download:hover > button
           background-color inherit
           opacity 1 !important
@@ -141,9 +143,6 @@
         line-height 1.5em
         font-size 1rem
 
-        // not .about
-        // display: none;
-
         a
           font-weight inherit
           color inherit
@@ -153,15 +152,15 @@
 
       .docs-navigation
 
-        .about
-
-          opacity 1
-          border-bottom-color #18FFFF
-
         .download > .material-icons
           display none
 
   &:not(.about)
+
+    box-sizing border-box
+    // height 144px
+    height 117px
+    background-position 40px 32px
 
     // background-repeat no-repeat
     // background-position center center
@@ -171,3 +170,50 @@
       .docs-layout-title
 
         display: none
+
+    .docs-navigation__container
+
+      .docs-navigation
+
+        .download > button
+
+          display none
+
+  labels = about started templates components styles customize showcase faq
+
+  for className in labels
+    &.{className}
+      .docs-navigation__container
+        .{className}
+          opacity 1 !important
+          border-bottom-color #18FFFF
+
+  &.started, &.faq
+    background-color #2E2E2E
+    background-image url('./assets/logo.png')
+    background-size auto 32px
+
+  &.templates
+    background-color #263238
+    background-image url('../../assets/label/templates/templates.png')
+    background-size auto 29px
+
+  &.components
+    background-color: #C2185B;
+    background-image: url('../../assets/label/components/components.png');
+    background-size: auto 34px;
+
+  &.styles
+    background-color #8E24AA
+    background-image url('../../assets/label/styles/styles.png')
+    background-size auto 41px
+
+  &.customize
+    background-color #1A237E
+    background-image url('../../assets/label/customize/customize.png')
+    background-size auto 36px
+
+  &.showcase
+    background-color #3E82F7
+    background-image url('../../assets/label/templates/templates.png')
+    background-size auto 29px

@@ -1,39 +1,44 @@
 module.exports = (router) ->
 
+  Layout = require './component/Layout/main.vue'
+
   router.map
 
     '/about':
       name: 'about'
-      component: require './view/About/main.vue'
+      component: Layout
 
     '/started':
       name: 'started'
-      component: require './view/Started/main.vue'
+      component: Layout
 
     '/templates':
       name: 'templates'
-      component: require './view/Templates/main.vue'
+      component: Layout
 
     '/components':
       name: 'components'
-      component: require './view/Components/main.vue'
+      component: Layout
 
     '/styles':
       name: 'styles'
-      component: require './view/Styles/main.vue'
+      component: Layout
 
     '/customize':
       name: 'customize'
-      component: require './view/Customize/main.vue'
+      component: Layout
+
+    '/showcase':
+      name: 'showcase'
+      component: Layout
 
     '/faq':
       name: 'faq'
-      component: require './view/FAQ/main.vue'
+      component: Layout
 
     'test':
       name: 'test'
-      component: require './component/Layout/main.vue'
-      # component: require './component/header/main.vue'
+      component: Layout
 
   router.alias
 

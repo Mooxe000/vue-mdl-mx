@@ -1,3 +1,4 @@
+echo = -> console.log arguments
 Comp =
   Header: require '../header/main.vue'
   Footer: require '../footer/main.vue'
@@ -11,12 +12,31 @@ Comp =
   Showcase: require '../../view/Showcase/main.vue'
   FAQ: require '../../view/FAQ/main.vue'
 
-  page: require '../page/main.vue'
+getDialogCompName = (routeName) ->
+  switch routeName
+    when 'about' then 'CompAbout'
+    when 'started' then 'CompStarted'
+    when 'templates' then 'CompTemplates'
+    when 'components' then 'CompComponents'
+    when 'styles' then 'CompStyles'
+    when 'customize' then 'CompCustomize'
+    when 'showcase' then 'CompShowcase'
+    when 'faq' then 'CompFaq'
+    else 'CompAbout'
 
 module.exports =
 
+  route:
+    data: (transition) ->
+      routeName = transition.to.name
+      transition.next
+        routeName: routeName
+        compContent: do ->
+          getDialogCompName routeName
+
   data: ->
-    compContent: 'CompPage'
+    routeName: ''
+    compContent: ''
 
   components:
     CompHeader: Comp.Header
@@ -30,5 +50,3 @@ module.exports =
     CompCustomize: Comp.Customize
     CompShowcase: Comp.Showcase
     CompFaq: Comp.FAQ
-
-    CompPage: Comp.page
