@@ -1,0 +1,148 @@
+code_pre()
+
+  a
+    font-weight 400
+    color #00BCD4
+    cursor pointer
+
+  code, pre
+    display inline-block
+    background-color rgba(0,0,0,0.06)
+    border-radius 3px
+    font-size 85%
+    white-space pre-wrap
+
+  code:before, code:after
+    letter-spacing -0.2em
+    content "\00a0"
+
+  pre
+    padding 16px
+    font-size 87%
+    box-sizing border-box
+
+  pre > code
+    background-color rgba(0,0,0,0)
+    padding 0px
+    font-size 100%
+    width 100%
+    box-sizing border-box
+    word-break break-word
+
+  pre > code:before,
+  pre > code:after
+    letter-spacing 0
+    content ""
+
+#started-panel
+
+  code_pre()
+
+  ol
+    padding-left 18px
+    font-size 13px
+
+  & > section
+
+    max-width 960px
+    margin 0 auto
+
+    h3, h4
+      display table-cell
+      font-size 15px
+      padding-right 60px
+      line-height 25px
+      text-transform none
+
+    .section-content
+      display table-cell
+
+      font-size 13px
+      margin-bottom 32px
+      max-width 640px
+
+      p
+        font-size 13px
+        margin-top 10px
+        margin-bottom 15px
+
+    h3
+      width 140px
+
+  section.docs-toc
+
+    nav.section-content
+
+      ul
+        border-left solid 4px #C0EbF1
+        padding-left 20px
+        line-height 28px
+
+      li
+        font-size 16px
+        list-style none
+
+  section#download
+
+    .section-content
+
+
+      .mdl-tabs
+
+        margin-bottom 22px
+
+        .mdl-tabs__tab-bar
+
+          justify-content flex-start
+          border-bottom 0
+          // margin-left -40px
+          // margin-right -40px
+          // justify-content center
+
+          .mdl-tabs__tab
+
+            color #00ACC1
+
+            &.is-active:after
+
+              background-color #00ACC1
+
+      .code-with-text
+        position relative
+        width auto
+        display block
+        border-spacing 0
+        border-collapse collapse
+        background-color white
+        padding 15px
+        border-radius 3px
+        font-size 13px
+
+        pre
+          margin 15px -15px -15px -15px
+          border-top-left-radius 0
+          border-top-right-radius 0
+          display block
+          width auto
+
+  .mdl-tabs__panel
+
+    padding-top 10px
+
+  .caption
+    margin-top 15px
+    padding 15px
+    background-color #fff
+    border-radius 3px
+
+    h4
+      font-size 13px
+      font-weight 400
+      font-style italic
+      margin-top 0
+
+  #tab2
+
+    .download-button-container
+      text-align center
+      margin-bottom 20px

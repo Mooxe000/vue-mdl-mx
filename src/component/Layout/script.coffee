@@ -24,6 +24,18 @@ getDialogCompName = (routeName) ->
     when 'faq' then 'CompFaq'
     else 'CompAbout'
 
+getRouteTitle = (routeName) ->
+  switch routeName
+    when 'about' then 'About'
+    when 'started' then 'Getting Started'
+    when 'templates' then 'Templates'
+    when 'components' then 'Components'
+    when 'styles' then 'Styles'
+    when 'customize' then 'Customize'
+    when 'showcase' then 'Showcase'
+    when 'faq' then 'FAQ'
+    else 'About'
+
 module.exports =
 
   route:
@@ -31,11 +43,14 @@ module.exports =
       routeName = transition.to.name
       transition.next
         routeName: routeName
+        pageTitle: do ->
+          getRouteTitle routeName
         compContent: do ->
           getDialogCompName routeName
 
   data: ->
     routeName: ''
+    pageTitle: ''
     compContent: ''
 
   components:

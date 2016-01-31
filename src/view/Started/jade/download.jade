@@ -1,0 +1,47 @@
+section#download
+  
+  h3 Include the master CSS &#38; JavaScript
+  
+  .section-content
+    
+    p
+      | Include the Material Lite CSS and JavaScript files 
+      | in each HTML page in your project. 
+      | We recommend that you use the
+      strong &nbsp;files hosted on our CDN
+      | . You can also
+      strong &nbsp;customize and download&nbsp;
+      | them to host them yourself,
+      strong &nbsp;build&nbsp;
+      | them from our source code or install them in your
+      strong &nbsp;npm/Bower&nbsp;
+      | project.
+      
+    .mdl-tabs.mdl-js-tabs
+      
+      .mdl-tabs__tab-bar
+        
+        a.mdl-tabs__tab.is-active(
+        href='#tab1'
+        ) Hosted
+        a.mdl-tabs__tab(
+        href='#tab2'
+        ) Download
+        a.mdl-tabs__tab(
+        href='#tab3'
+        ) Build
+        a.mdl-tabs__tab(
+        href='#tab4'
+        ) Bower
+        a.mdl-tabs__tab(
+        href='#tab5'
+        ) npm
+        
+      include ./download.hosted.jade
+      include ./download.download.jade
+      include ./download.build.jade
+      include ./download.bower.jade
+      include ./download.npm.jade
+      
+    p
+      | That"s it! You are now ready to add MDL components on your site.

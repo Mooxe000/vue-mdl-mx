@@ -1,0 +1,48 @@
+#tab3.mdl-tabs__panel
+  p
+    | Our source code is hosted
+    | &nbsp;
+    a(href="https://github.com/google/material-design-lite") on GitHub
+    | &nbsp;
+    | . You"ll need to download the code and build it.
+  .code-with-text
+    | Run the following commands in a shell:
+    pre.language-bash
+      code.
+        # Clone/copy the Material Design lite source code.
+        git clone https://github.com/google/material-design-lite.git
+        # Go into the newly created folder containing the source code.
+        cd material-design-lite
+        # Install necessary dependencies.
+        npm install && npm install -g gulp
+        # Build a production version of the components.
+        gulp
+      
+  p
+    | You"ll find the Material Design Lite library"s file in the
+    code dist
+    | folder. Copy them to your project.
+  .code-with-text
+    | Refer to these files by adding a
+    | &nbsp;
+    code &#60;link&#62;
+    | &nbsp;
+    | and a
+    | &nbsp;
+    code &#60;script&#62;
+    | &nbsp;
+    | element into your HTML pages and also include the Material Icon font:
+    pre.language-markup
+      code.
+        &lt;link rel="stylesheet" href="./material.min.css"&gt;
+        &lt;script src="./material.min.js"&gt;&lt;/script&gt;
+        &lt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;
+      
+  .caption
+    h4
+      | Note:
+    | Using this method you will not be able to customize the color scheme of the MDL elements. If you"d like to customize the color scheme prefer the CDN hosted or downloadable libraries. In this case use our
+    | &nbsp;
+    a(href="../customize/index.html") Customize and Preview tool
+    | &nbsp;
+    | .

@@ -1,5 +1,5 @@
 //- .image-preloader
-  
+
 .docs-layout(
 class='mdl-layout'
 class='mdl-js-layout'
@@ -18,22 +18,23 @@ class='mdl-js-layout'
     
     #content.content(
     class='mdl-grid.mdl-grid--no-spacing'
+    v-bind:class='routeName'
     )
       .subpageheader(
-      class='mdl-cell--12-col'  
-      )
+      class='mdl-cell--12-col'
+      ) {{ pageTitle }}
       
       component(
       :is="compContent"
       )
         
-      section.docs-text-styling.download(
-      class='mdl-color--grey-800'
-      )
-        
-        a(
-        class='mdl-color-text--grey-50'
-        ) Download Kit
+    section.docs-text-styling.download(
+    class='mdl-color--grey-800'
+    )
+      
+      a(
+      class='mdl-color-text--grey-50'
+      ) Download Kit
       
   
   //- Footer

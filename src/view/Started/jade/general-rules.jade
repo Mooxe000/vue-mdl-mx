@@ -1,0 +1,45 @@
+section#general-rules
+  h3 General rules and principles
+  .section-content
+    p
+      | In general, follow these basic steps to use an MDL component in your HTML page:
+    ol
+      li
+        | Start with a standard HTML element, such as
+        code &#60;button&#62;
+        | ,
+        code &#60;div&#62;
+        | , or
+        code &#60;ul&#62;
+        | , depending on the MDL component you want to use. This establishes the element in the page and readies it for MDL modification.
+      li
+        | Add one or more MDL-specific CSS classes to the element, such as
+        | &nbsp;
+        code mdl-button
+        | &nbsp;
+        | or
+        | &nbsp;
+        code mdl-tabs__panel
+        | , again depending on the component. The classes apply the MDL enhancements to the element and turn it into an MDL component.
+    p
+      | Remember to include the
+      | &nbsp;
+      a(href="https://developers.google.com/speed/docs/insights/ConfigureViewport") meta viewport
+      | &nbsp;
+      | tag in your document so mobile devices will render correctly.
+    pre.language-markup
+      code.
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      
+    .caption
+      h4
+        | A note about HTML elements and MDL CSS classes
+      | Material Design Lite uses namespaced
+      | &nbsp;
+      a(href="https://en.bem.info/method/") BEM
+      | &nbsp;
+      | classes&#8212;which can apply to almost any HTML element&#8212;to construct components. For some components you can use almost any element. The examples in
+      | &nbsp;
+      a(href="../components/index.html") each component"s documentation
+      | &nbsp;
+      | use elements that perform well as that component. If you must use elements other than those shown in the examples, we encourage you to experiment to find the best combination of HTML elements and MDL CSS classes for your application.

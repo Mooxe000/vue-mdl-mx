@@ -1,0 +1,30 @@
+#tab1.mdl-tabs__panel.is-active
+  
+  .code-with-text
+    
+    | Just add the following&nbsp;
+    code &#60;link&#62;
+    | &nbsp;and&nbsp;
+    code &#60;script&#62;
+    | &nbsp;elements into your HTML pages (27kB gzipped):
+    
+    pre.language-markup
+      code.
+        &lt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;
+        &lt;link rel="stylesheet" href="$$hosted_libs_prefix$$/$$version$$/material.indigo-pink.min.css"&gt;
+        &lt;script defer src="$$hosted_libs_prefix$$/$$version$$/material.min.js"&gt;&lt;/script&gt;
+      
+  h4 Choose color scheme
+  
+  p
+    a(href="http://www.google.com/design/spec/style/color.html")
+    | Color schemes used in Material Design
+    | are based on a primary and an accent colors which you may want to personalize. These colors are specified in the CSS file name by following this pattern:&nbsp;
+    code material.{primary}-{accent}.min.css
+    | &nbsp;(e.g.&nbsp;
+    code material.indigo-pink.min.css
+    | &nbsp;). Our CDN hosts a number of color combinations based on common Material Design colors. To discover and preview available color combinations use our &nbsp;
+    a(
+    v-link='"customize"'
+    ) Customize and Preview tool
+    | .
