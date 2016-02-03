@@ -9,7 +9,8 @@ class='mdl-shadow--4dp'
     v-link='"/components/" + $key'
     class='mdl-components__link'
     class='mdl-component'
-    v-bind:class='$key'
+    v-bind:class='item.class'
+    @click='toggleTabs($key, items)'
     )
       .mdl-components__link-image(
       :style="{ backgroundImage: item.icon }"
