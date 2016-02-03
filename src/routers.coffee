@@ -15,6 +15,7 @@ module.exports = (router) ->
       Loading: require './view/Components.Loading/main.vue'
       Menus: require './view/Components.Menus/main.vue'
       Sliders: require './view/Components.Sliders/main.vue'
+      Tables: require './view/Components.Tables/main.vue'
       TextFields: require './view/Components.TextFields/main.vue'
       Toggles: require './view/Components.Toggles/main.vue'
       Tooltips: require './view/Components.Tooltips/main.vue'
@@ -83,7 +84,7 @@ module.exports = (router) ->
 
             'tables':
               name: 'components.tables'
-              component: Comp.Components
+              component: Comp.Components.Tables
 
             'textfields':
               name: 'components.textfields'
