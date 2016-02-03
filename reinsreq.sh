@@ -27,7 +27,7 @@ cnpm install --save-dev \
   template-html-loader \
   html-webpack-plugin@^2.0.0 \
   style-loader extract-text-webpack-plugin \
-  static-loader
+  script-loader static-loader
 
 cnpm install --save-dev \
   lodash \
