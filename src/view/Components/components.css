@@ -40,7 +40,7 @@
   height: 90%;
   width: 90%;
   max-height: 600px;
-  background: url('./assets/compindex_2x.png') no-repeat top left / contain;
+  background: url('./assets/compindex_2x.png') no-repeat top left/contain;
 }
 
 .mdl-components-text {
