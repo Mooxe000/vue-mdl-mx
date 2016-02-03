@@ -24,9 +24,7 @@ class='mdl-js-layout'
       class='mdl-cell--12-col'
       ) {{ pageTitle }}
       
-      component(
-      :is="compContent"
-      )
+      router-view
         
     section.docs-text-styling.download(
     class='mdl-color--grey-800'

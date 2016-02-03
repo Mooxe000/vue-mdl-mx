@@ -1,12 +1,12 @@
+echo = -> console.log arguments
+# Styles
 require './style.styl'
 
 Vue = require 'vue'
 VueRouter = require 'vue-router'
 
 app = Vue.extend {}
-
 Vue.use VueRouter
-
 routerMap = require './routers.coffee'
 router = new VueRouter
   hashbang: true
@@ -14,9 +14,9 @@ router = new VueRouter
   saveScrollPosition: true
   transitionOnLoad: true
 routerMap router
-
 router.start app, '#app'
 
+# Scripts
 require 'prismjs'
 require 'material-design-lite/material.js'
 # require './main.js'

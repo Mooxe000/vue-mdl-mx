@@ -1,1 +1,11 @@
-include ../Templates/index.jade
+.mdl-components.mdl-js-components(
+class='mdl-cell'
+class='mdl-cell--12-col'
+)
+
+  component(
+  :is="components_menu"
+  )
+  
+  main.mdl-components__pages
+    router-view

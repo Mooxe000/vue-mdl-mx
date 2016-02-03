@@ -26,7 +26,8 @@ cnpm install --save-dev \
   file-loader url-loader \
   template-html-loader \
   html-webpack-plugin@^2.0.0 \
-  style-loader extract-text-webpack-plugin
+  style-loader extract-text-webpack-plugin \
+  static-loader
 
 cnpm install --save-dev \
   lodash \
@@ -35,4 +36,5 @@ cnpm install --save-dev \
   # gulp-sequence
 
 cnpm install --save \
-  vue vue-router
+  vue vue-router \
+  prismjs material-design-lite

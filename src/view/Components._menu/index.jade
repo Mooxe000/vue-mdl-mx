@@ -1,0 +1,17 @@
+aside.mdl-components__nav.docs-text-styling(
+class='mdl-shadow--4dp'
+)
+
+  template(
+  v-for="item in items"
+  )
+    a(
+    v-link='"/components/" + $key'
+    class='mdl-components__link'
+    class='mdl-component'
+    v-bind:class='$key'
+    )
+      .mdl-components__link-image(
+      :style="{ backgroundImage: item.icon }"
+      )
+      span.mdl-components__link-text {{ item.name }}
