@@ -3,4 +3,4 @@ reload = require '../module/reload'
 
 module.exports = ->
 
-  gulp.watch 'src/**/*', reload
+  gulp.watch 'doc/**/*', reload
